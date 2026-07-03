@@ -1,0 +1,480 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ship24H | Báo cáo SEO & Social tháng 6</title>
+  <meta name="description" content="Landing page tóm tắt báo cáo triển khai SEO, Social và kế hoạch tăng trưởng tháng 7 cho thương hiệu Ship24H.">
+  <meta property="og:title" content="Ship24H | Báo cáo SEO & Social tháng 6">
+  <meta property="og:description" content="Kết quả SEO, brand, social, Fanpage và KPI triển khai tháng 7 của Ship24H.">
+  <style>
+    :root {
+      --blue-900:#062351;
+      --blue-800:#083a82;
+      --blue-700:#0757b8;
+      --blue-600:#0b76db;
+      --sky:#e8f5ff;
+      --cyan:#00a7e8;
+      --yellow:#ffc928;
+      --orange:#ff9f1a;
+      --ink:#102033;
+      --muted:#66758a;
+      --line:#dbe7f3;
+      --bg:#f6faff;
+      --white:#ffffff;
+      --shadow:0 20px 50px rgba(6, 35, 81, .12);
+      --radius:24px;
+      --radius-sm:16px;
+      --max:1180px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+      color:var(--ink);
+      background:
+        radial-gradient(circle at top left, rgba(0,167,232,.16), transparent 32rem),
+        radial-gradient(circle at 90% 10%, rgba(255,201,40,.18), transparent 24rem),
+        var(--bg);
+      line-height:1.55;
+    }
+    a{color:inherit;text-decoration:none}
+    img{max-width:100%;display:block}
+    .topbar{
+      position:sticky;top:0;z-index:30;
+      backdrop-filter:saturate(1.2) blur(14px);
+      background:rgba(255,255,255,.86);
+      border-bottom:1px solid rgba(219,231,243,.9);
+    }
+    .nav{
+      max-width:var(--max);margin:0 auto;padding:14px 22px;
+      display:flex;align-items:center;justify-content:space-between;gap:18px;
+    }
+    .brand{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:.2px;color:var(--blue-900)}
+    .logo{
+      width:42px;height:42px;border-radius:12px;
+      background:linear-gradient(135deg,var(--yellow) 0 28%,var(--cyan) 28% 62%,var(--blue-700) 62% 100%);
+      display:grid;place-items:center;color:white;font-weight:900;box-shadow:0 12px 28px rgba(0,117,219,.22);
+    }
+    .logo span{transform:rotate(-12deg);display:block}
+    .navlinks{display:flex;align-items:center;gap:18px;font-size:14px;color:var(--muted)}
+    .navlinks a:hover{color:var(--blue-700)}
+    .btn{
+      display:inline-flex;align-items:center;justify-content:center;gap:8px;
+      border:0;border-radius:999px;padding:12px 18px;font-weight:800;
+      color:var(--white);background:linear-gradient(135deg,var(--blue-700),var(--cyan));
+      box-shadow:0 12px 30px rgba(11,118,219,.28);cursor:pointer;
+      transition:.2s ease;white-space:nowrap;
+    }
+    .btn:hover{transform:translateY(-1px);box-shadow:0 16px 36px rgba(11,118,219,.34)}
+    .btn.secondary{background:var(--white);color:var(--blue-800);border:1px solid var(--line);box-shadow:none}
+    .hero{
+      max-width:var(--max);margin:0 auto;padding:72px 22px 38px;
+      display:grid;grid-template-columns:1.07fr .93fr;gap:36px;align-items:center;
+    }
+    .eyebrow{
+      display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(11,118,219,.18);
+      background:rgba(255,255,255,.72);color:var(--blue-800);
+      border-radius:999px;padding:8px 12px;font-weight:800;font-size:13px;
+    }
+    h1{font-size:clamp(38px,5vw,72px);line-height:.98;margin:20px 0 18px;color:var(--blue-900);letter-spacing:-0.03em}
+    .lead{font-size:clamp(17px,2vw,21px);color:#415066;max-width:720px;margin:0 0 26px}
+    .hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}
+    .hero-card{
+      background:rgba(255,255,255,.82);border:1px solid rgba(219,231,243,.9);
+      border-radius:var(--radius);box-shadow:var(--shadow);padding:22px;overflow:hidden;position:relative;
+    }
+    .hero-card:before{
+      content:"";position:absolute;inset:0 0 auto 0;height:7px;
+      background:linear-gradient(90deg,var(--yellow),var(--cyan),var(--blue-700));
+    }
+    .score-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:12px}
+    .score{background:linear-gradient(180deg,#fff,#f6fbff);border:1px solid var(--line);border-radius:18px;padding:18px}
+    .score b{display:block;font-size:34px;line-height:1;color:var(--blue-800);letter-spacing:-1px}
+    .score span{display:block;margin-top:8px;color:var(--muted);font-size:14px}
+    .section{max-width:var(--max);margin:0 auto;padding:54px 22px}
+    main, .section{scroll-margin-top:80px}
+    .section-title{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;margin-bottom:24px}
+    .section-title h2{font-size:clamp(28px,3.6vw,46px);line-height:1.05;letter-spacing:-0.02em;color:var(--blue-900);margin:0}
+    .section-title p{max-width:520px;margin:0;color:var(--muted)}
+    .cards{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+    .card{background:rgba(255,255,255,.86);border:1px solid var(--line);border-radius:var(--radius-sm);padding:20px;box-shadow:0 12px 34px rgba(6,35,81,.07)}
+    .card .icon{width:42px;height:42px;border-radius:14px;display:grid;place-items:center;background:var(--sky);color:var(--blue-700);font-size:22px;margin-bottom:14px}
+    .card h3{font-size:17px;margin:0 0 8px;color:var(--blue-900)}
+    .card p{margin:0;color:var(--muted);font-size:14px}
+    .split{display:grid;grid-template-columns:.9fr 1.1fr;gap:22px;align-items:start}
+    .panel{background:rgba(255,255,255,.9);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:24px}
+    .panel h3{margin:0 0 12px;color:var(--blue-900);font-size:22px}
+    .bullets{margin:0;padding:0;list-style:none;display:grid;gap:12px}
+    .bullets li{display:flex;gap:10px;color:#405065}
+    .bullets li:before{content:"✓";flex:0 0 23px;width:23px;height:23px;border-radius:50%;display:grid;place-items:center;background:#eaf8ee;color:#18884b;font-weight:900;font-size:13px;margin-top:1px}
+    .table-wrap{overflow:auto;border:1px solid var(--line);border-radius:18px;background:#fff}
+    table{width:100%;border-collapse:separate;border-spacing:0;min-width:720px}
+    th,td{padding:14px 16px;border-bottom:1px solid var(--line);vertical-align:top;text-align:left;font-size:14px}
+    th{background:linear-gradient(180deg,#f1f8ff,#eaf4ff);color:var(--blue-900);font-weight:900;position:sticky;top:0}
+    tr:last-child td{border-bottom:0}
+    .rank-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
+    .rank{position:relative;overflow:hidden;background:#fff;border:1px solid var(--line);border-radius:18px;padding:18px;min-height:134px}
+    .rank strong{display:block;font-size:14px;color:var(--muted)}
+    .rank b{display:block;color:var(--blue-800);font-size:42px;line-height:1;margin:10px 0}
+    .rank p{font-size:13px;color:var(--muted);margin:0}
+    .bar{height:8px;background:#e7f1fb;border-radius:999px;overflow:hidden;margin-top:14px}
+    .bar i{display:block;height:100%;border-radius:999px;background:linear-gradient(90deg,var(--yellow),var(--cyan),var(--blue-700))}
+    .tabs{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:14px}
+    .tab-button{border:1px solid var(--line);border-radius:999px;background:#fff;color:var(--blue-800);padding:10px 14px;font-weight:800;cursor:pointer}
+    .tab-button.active{background:var(--blue-800);color:#fff;border-color:var(--blue-800)}
+    .tab-panel{display:none}
+    .tab-panel.active{display:block}
+    .evidence-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+    .evidence-card{background:#fff;border:1px solid var(--line);border-radius:22px;overflow:hidden;box-shadow:0 14px 38px rgba(6,35,81,.08)}
+    .evidence-card img{aspect-ratio:16/9;object-fit:contain;background:#eef5fb;border-bottom:1px solid var(--line)}
+    .evidence-copy{padding:16px}
+    .evidence-copy h3{font-size:16px;margin:0 0 6px;color:var(--blue-900)}
+    .evidence-copy p{font-size:13px;color:var(--muted);margin:0}
+    .kpi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .kpi-card{background:#fff;border:1px solid var(--line);border-radius:24px;padding:20px;box-shadow:0 12px 34px rgba(6,35,81,.07)}
+    .kpi-card h3{display:flex;align-items:center;gap:10px;margin:0 0 14px;color:var(--blue-900);font-size:20px}
+    .kpi-card table{min-width:0}
+    .timeline{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;counter-reset:step}
+    .step{background:#fff;border:1px solid var(--line);border-radius:22px;padding:20px;position:relative}
+    .step:before{counter-increment:step;content:counter(step);width:34px;height:34px;border-radius:12px;background:linear-gradient(135deg,var(--yellow),var(--orange));display:grid;place-items:center;font-weight:900;color:var(--blue-900);margin-bottom:14px}
+    .step h3{margin:0 0 8px;color:var(--blue-900);font-size:18px}
+    .step p{margin:0;color:var(--muted);font-size:14px}
+    .cta{
+      max-width:var(--max);margin:40px auto 72px;padding:0 22px;
+    }
+    .cta-box{
+      border-radius:32px;padding:34px;background:
+        linear-gradient(135deg,rgba(6,35,81,.96),rgba(7,87,184,.94)),
+        radial-gradient(circle at top right,rgba(255,201,40,.28),transparent 20rem);
+      color:#fff;display:grid;grid-template-columns:1fr auto;gap:22px;align-items:center;box-shadow:0 24px 64px rgba(6,35,81,.22);overflow:hidden;position:relative;
+    }
+    .cta-box:after{content:"";position:absolute;right:-50px;bottom:-70px;width:220px;height:220px;border-radius:50%;background:rgba(255,201,40,.16)}
+    .cta-box h2{margin:0 0 8px;font-size:clamp(26px,3vw,40px);letter-spacing:-1px}
+    .cta-box p{margin:0;color:#d9e8f8;max-width:760px}
+    .footer{border-top:1px solid var(--line);padding:28px 22px;text-align:center;color:var(--muted);font-size:14px;background:rgba(255,255,255,.64)}
+    .badge{display:inline-flex;align-items:center;gap:7px;background:#fff4ce;color:#7a5500;border:1px solid #ffe49a;border-radius:999px;padding:7px 11px;font-size:13px;font-weight:800}
+    @media (max-width: 980px){
+      .hero,.split,.cta-box{grid-template-columns:1fr}
+      .cards{grid-template-columns:repeat(2,1fr)}
+      .rank-grid{grid-template-columns:repeat(2,1fr)}
+      .kpi-grid{grid-template-columns:1fr}
+      .timeline{grid-template-columns:repeat(2,1fr)}
+      .navlinks{display:none}
+    }
+    @media (max-width: 620px){
+      .hero{padding-top:44px}
+      .score-grid,.cards,.rank-grid,.evidence-grid,.timeline{grid-template-columns:1fr}
+      .section{padding:38px 18px}
+      .nav{padding-left:18px;padding-right:18px}
+      h1{letter-spacing:-1.2px}
+      .cta-box{padding:26px}
+    }
+    @media print{
+      .topbar,.hero-actions,.tabs,.btn{display:none!important}
+      body{background:#fff}
+      .section,.hero,.cta{padding:22px;max-width:none}
+      .panel,.card,.hero-card,.kpi-card,.evidence-card,.cta-box{box-shadow:none;break-inside:avoid}
+      .tab-panel{display:block}
+      table{min-width:0}
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <nav class="nav" aria-label="Điều hướng chính">
+      <a class="brand" href="#top" aria-label="Ship24H landing page">
+        <span class="logo" aria-hidden="true"><span>✈</span></span>
+        <span>Ship24H Report</span>
+      </a>
+      <div class="navlinks">
+        <a href="#summary">Tổng quan</a>
+        <a href="#seo">SEO</a>
+        <a href="#social">Social</a>
+        <a href="#plan">Kế hoạch T7</a>
+        <a href="#evidence">Minh chứng</a>
+      </div>
+      <div style="display: flex; gap: 12px;">
+        <a class="btn" href="https://ship24h.vn/" target="_blank" rel="noopener">Xem website</a>
+        <a class="btn" href="https://web.facebook.com/ship24.icagreen" target="_blank" rel="noopener">Xem Fanpage</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div>
+        <span class="eyebrow">Báo cáo 01/06/2026 – 30/06/2026</span>
+        <h1 id="hero-title">SEO & Social Ship24H tháng 6</h1>
+        <p class="lead">Landing page tóm tắt kết quả triển khai thương hiệu, SEO trust, entity, nội dung, Fanpage và kế hoạch tăng trưởng tháng 7 theo hướng tạo khách hàng tiềm năng thực tế.</p>
+        <div class="hero-actions">
+          <a class="btn" href="#plan">Xem kế hoạch tháng 7</a>
+          <a class="btn secondary" href="#seo">Xem kết quả SEO</a>
+        </div>
+      </div>
+      <aside class="hero-card" aria-label="Chỉ số nổi bật">
+        <span class="badge">Dữ liệu kiểm tra: 02–03/07/2026</span>
+        <div class="score-grid">
+          <div class="score"><b>47/55</b><span>Từ khóa unique nằm trong Top 10 Google</span></div>
+          <div class="score"><b>85,5%</b><span>Tỷ lệ từ khóa đang ở trang 1</span></div>
+          <div class="score"><b>200</b><span>Backlinks social tăng trust website</span></div>
+          <div class="score"><b>22</b><span>Bài viết SEO đã audit và tối ưu định hướng</span></div>
+        </div>
+      </aside>
+    </section>
+
+    <section id="summary" class="section">
+      <div class="section-title">
+        <h2>Tổng quan triển khai</h2>
+        <p>Giai đoạn tháng 6 tập trung xây nền tảng thương hiệu, EEAT, technical SEO, nội dung và social để chuẩn bị cho mục tiêu chuyển đổi trong tháng 7.</p>
+      </div>
+      <div class="cards">
+        <article class="card"><div class="icon">🔎</div><h3>Google Search & AI Overview</h3><p>Tối ưu hiện diện thương hiệu Ship24H và kiểm tra tín hiệu ở các khu vực tìm kiếm liên quan.</p></article>
+        <article class="card"><div class="icon">👤</div><h3>CEO Entity</h3><p>Xây dựng tín hiệu nhận diện CEO Trịnh Quang Hiệu để tăng yếu tố con người thật và chuyên môn thật.</p></article>
+        <article class="card"><div class="icon">🔗</div><h3>Backlink Social</h3><p>Triển khai hệ thống social profile nhằm mở rộng dấu vết thương hiệu và hỗ trợ Google hiểu entity.</p></article>
+        <article class="card"><div class="icon">📄</div><h3>Content & Fanpage</h3><p>Audit bài viết SEO, bổ sung CTA, định hướng nội dung Fanpage theo giáo dục thị trường và chuyển đổi.</p></article>
+      </div>
+    </section>
+
+    <section id="brand" class="section">
+      <div class="split">
+        <div class="panel">
+          <h3>Kết quả brand & EEAT</h3>
+          <ul class="bullets">
+            <li>Ship24H đã bắt đầu có tín hiệu nhận diện tốt hơn trên Google Search và AI Overview.</li>
+            <li>Nhóm từ khóa thương hiệu ghi nhận vị trí thứ 2 trong kết quả tìm kiếm về brand.</li>
+            <li>Trang CEO Trịnh Quang Hiệu được đề xuất bổ sung để củng cố EEAT cho lĩnh vực vận chuyển thú cưng.</li>
+            <li>50 backlinks social cho CEO giúp tạo liên kết giữa cá nhân lãnh đạo và thương hiệu Ship24H.</li>
+          </ul>
+        </div>
+        <div class="panel">
+          <h3>Hạng mục đã triển khai</h3>
+          <ul class="bullets">
+            <li>Tối ưu tín hiệu nhận diện thương hiệu Ship24H trên Google Search và AI Search.</li>
+            <li>Triển khai 200 backlinks social tăng độ trust cho website.</li>
+            <li>Audit technical site cho trang dịch vụ và tin tức.</li>
+            <li>Bổ sung trang CEO và trang dịch vụ vận chuyển thú cưng riêng.</li>
+            <li>Audit 22 bài viết SEO theo intent, heading, internal link, CTA và yếu tố kinh nghiệm thực tế.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="seo" class="section">
+      <div class="section-title">
+        <h2>Kết quả từ khóa SEO</h2>
+        <p>Dữ liệu kiểm tra ngày 02/07/2026 cho thấy website đã có nền tảng SEO tốt ở nhóm vận chuyển thú cưng, nhập khẩu chó mèo, bảng giá và brand Ship24H.</p>
+      </div>
+      <div class="rank-grid">
+        <div class="rank"><strong>Top 1</strong><b>12</b><p>Từ khóa dẫn đầu</p><div class="bar"><i style="width:78%"></i></div></div>
+        <div class="rank"><strong>Top 2–3</strong><b>12</b><p>Có khả năng đẩy lên Top 1</p><div class="bar"><i style="width:72%"></i></div></div>
+        <div class="rank"><strong>Top 4–10</strong><b>23</b><p>Trang 1, tiềm năng chuyển đổi</p><div class="bar"><i style="width:90%"></i></div></div>
+        <div class="rank"><strong>Top 11–20</strong><b>7</b><p>Cần kéo về trang 1</p><div class="bar"><i style="width:44%"></i></div></div>
+        <div class="rank"><strong>Top 21–25</strong><b>1</b><p>Cần theo dõi</p><div class="bar"><i style="width:22%"></i></div></div>
+      </div>
+      <div style="height:22px"></div>
+      <div class="panel">
+        <h3>Phân bổ vị trí từ khóa</h3>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Nhóm vị trí</th><th>Số lượng từ khóa</th><th>Ý nghĩa</th></tr></thead>
+            <tbody><tr><td>Top 1</td><td>12</td><td>Đã chiếm vị trí dẫn đầu với các nhóm từ khóa trọng điểm</td></tr>
+<tr><td>Top 2–3</td><td>12</td><td>Có khả năng đẩy lên Top 1 nếu tiếp tục tối ưu nội dung, internal link và trust</td></tr>
+<tr><td>Top 4–10</td><td>23</td><td>Đang nằm trong trang 1 Google, có tiềm năng tăng trưởng chuyển đổi</td></tr>
+<tr><td>Top 11–20</td><td>7</td><td>Nằm ở trang 2, cần tối ưu thêm để kéo về trang 1</td></tr>
+<tr><td>Top 21–25</td><td>1</td><td>Cần theo dõi và bổ sung nội dung hỗ trợ</td></tr></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-title">
+        <h2>Nhóm từ khóa quan trọng</h2>
+        <p>Các bảng dưới đây giúp ưu tiên nguồn lực cho nhóm đã có lợi thế, nhóm gần Top 1 và nhóm cần tối ưu để tạo chuyển đổi.</p>
+      </div>
+      <div class="tabs" role="tablist" aria-label="Bảng từ khóa">
+        <button class="tab-button active" data-tab="tab1" type="button">Top 1</button>
+        <button class="tab-button" data-tab="tab2" type="button">Top 2–3</button>
+        <button class="tab-button" data-tab="tab3" type="button">Trang 1 tiềm năng</button>
+        <button class="tab-button" data-tab="tab4" type="button">Cần tối ưu</button>
+      </div>
+      <div class="panel tab-panel active" id="tab1">
+        <div class="table-wrap"><table><thead><tr><th>Nhóm từ khóa</th><th>Ví dụ từ khóa</th><th>Vị trí</th></tr></thead><tbody><tr><td>Bảng giá vận chuyển thú cưng</td><td>bảng giá vận chuyển chó mèo bằng máy bay 2026</td><td>1</td></tr>
+<tr><td>Vận chuyển chó mèo quốc tế</td><td>dịch vụ vận chuyển chó mèo đi Mỹ Úc Canada trọn gói</td><td>1</td></tr>
+<tr><td>Vận chuyển chó mèo đi Mỹ, Úc, Canada</td><td>vận chuyển chó mèo đi Mỹ Úc Canada</td><td>1</td></tr>
+<tr><td>Test kháng thể dại</td><td>test kháng thể dại cho chó mèo đi Châu Âu Úc</td><td>1</td></tr>
+<tr><td>Nhập khẩu chó mèo về Việt Nam</td><td>thủ tục nhập khẩu chó mèo từ nước ngoài về Việt Nam</td><td>1</td></tr>
+<tr><td>Nhập khẩu thú cưng</td><td>nhập khẩu thú cưng về Việt Nam</td><td>1</td></tr>
+<tr><td>Brand dịch vụ</td><td>Ship24H vận chuyển thú cưng</td><td>1</td></tr>
+<tr><td>Brand ICAGREEN</td><td>ICAGREEN vận chuyển thú cưng</td><td>1</td></tr>
+<tr><td>Dịch vụ vận chuyển nội địa</td><td>vận chuyển nội địa Ship24H</td><td>1</td></tr></tbody></table></div>
+      </div>
+      <div class="panel tab-panel" id="tab2">
+        <div class="table-wrap"><table><thead><tr><th>Từ khóa</th><th>Vị trí hiện tại</th><th>URL đang xếp hạng</th></tr></thead><tbody><tr><td>bảng giá vận chuyển chó mèo bằng máy bay</td><td>2</td><td>Bài bảng giá vận chuyển chó mèo bằng máy bay</td></tr>
+<tr><td>chi phí vận chuyển chó mèo bằng máy bay</td><td>2</td><td>Bài bảng giá vận chuyển chó mèo bằng máy bay</td></tr>
+<tr><td>phí gửi chó mèo bằng máy bay</td><td>2</td><td>Bài bảng giá vận chuyển chó mèo bằng máy bay</td></tr>
+<tr><td>giá vận chuyển thú cưng bằng máy bay</td><td>2</td><td>Bài bảng giá vận chuyển chó mèo bằng máy bay</td></tr>
+<tr><td>Ship24H</td><td>2</td><td>Trang chủ</td></tr>
+<tr><td>nhập khẩu chó mèo về Việt Nam cần giấy tờ gì</td><td>2</td><td>Bài thủ tục nhập khẩu chó mèo về Việt Nam</td></tr>
+<tr><td>mèo nhập khẩu</td><td>2</td><td>Bài thủ tục nhập khẩu chó mèo về Việt Nam</td></tr>
+<tr><td>ship 24h</td><td>3</td><td>Trang chủ</td></tr></tbody></table></div>
+      </div>
+      <div class="panel tab-panel" id="tab3">
+        <div class="table-wrap"><table><thead><tr><th>Nhóm chủ đề</th><th>Ví dụ từ khóa</th><th>Vị trí</th></tr></thead><tbody><tr><td>Vận chuyển thú cưng đi Úc</td><td>gửi thú cưng đi Úc mất bao lâu</td><td>4</td></tr>
+<tr><td>Vận chuyển chó mèo đi Úc</td><td>vận chuyển chó mèo đi Úc</td><td>5</td></tr>
+<tr><td>Dịch vụ vận chuyển chó mèo đi Úc</td><td>dịch vụ vận chuyển chó mèo đi úc</td><td>10</td></tr>
+<tr><td>Mã kho hàng không Nội Bài</td><td>mã kho nội bài</td><td>4</td></tr>
+<tr><td>Kho ACSV/NCTS/ALSC</td><td>mã kho acsv nội bài, mã kho ncts, mã kho alsc</td><td>5–8</td></tr>
+<tr><td>Thủ tục nhập cảnh chó mèo</td><td>thủ tục nhập cảnh chó mèo vào Việt Nam</td><td>7</td></tr></tbody></table></div>
+      </div>
+      <div class="panel tab-panel" id="tab4">
+        <div class="table-wrap"><table><thead><tr><th>Từ khóa</th><th>Vị trí</th><th>Hướng xử lý đề xuất</th></tr></thead><tbody><tr><td>giống chó mèo bị cấm nhập khẩu</td><td>12</td><td>Bổ sung section riêng trong bài nhập khẩu thú cưng</td></tr>
+<tr><td>bảng giá vận chuyển thú cưng</td><td>13</td><td>Tối ưu lại title, heading và đoạn mở đầu theo đúng intent</td></tr>
+<tr><td>thủ tục nhập cảnh chó mèo về Việt Nam</td><td>13</td><td>Tăng internal link về bài nhập khẩu chó mèo</td></tr>
+<tr><td>test dại chó mèo đi Úc</td><td>17</td><td>Tạo bài hoặc section chuyên sâu về test dại đi Úc</td></tr>
+<tr><td>lồng bay IATA cho chó mèo là gì</td><td>20</td><td>Tách thành bài riêng để kéo traffic thông tin</td></tr>
+<tr><td>kho asg nội bài</td><td>25</td><td>Bổ sung nội dung chi tiết hơn trong bài mã kho Nội Bài</td></tr></tbody></table></div>
+      </div>
+    </section>
+
+    <section id="social" class="section">
+      <div class="section-title">
+        <h2>Fanpage & Social</h2>
+        <p>Fanpage Ship24H được định hướng kết hợp giữa giáo dục thị trường, xây dựng niềm tin và thúc đẩy khách hàng để lại thông tin tư vấn.</p>
+      </div>
+      <div class="split">
+        <div class="panel">
+          <h3>Nhóm nội dung đề xuất</h3>
+          <ul class="bullets">
+            <li>Kiến thức vận chuyển thú cưng an toàn.</li>
+            <li>Quy trình chuẩn bị giấy tờ cho thú cưng.</li>
+            <li>Các lỗi thường gặp khi tự vận chuyển thú cưng.</li>
+            <li>Case study và chia sẻ hành trình vận chuyển thực tế.</li>
+            <li>Giới thiệu tuyến trọng điểm: nội địa, Mỹ, Úc, EU, Canada, Nhật, Hàn.</li>
+            <li>Bài đăng kêu gọi khách hàng inbox/Zalo để được tư vấn.</li>
+          </ul>
+        </div>
+        <div class="panel">
+          <h3>Mục tiêu Fanpage</h3>
+          <ul class="bullets">
+            <li>Tăng nhận diện thương hiệu và trust với khách hàng mới.</li>
+            <li>Hỗ trợ chuyển đổi từ nội dung sang inbox, Zalo hoặc hotline.</li>
+            <li>Tạo thêm tín hiệu social cho thương hiệu Ship24H.</li>
+            <li>Đồng bộ thông điệp từ website, social profile và Google Search.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="plan" class="section">
+      <div class="section-title">
+        <h2>Kế hoạch triển khai tháng 7</h2>
+        <p>Trọng tâm chuyển từ tăng nhận diện sang tạo khách hàng tiềm năng và thúc đẩy doanh thu thực tế cho dịch vụ vận chuyển thú cưng.</p>
+      </div>
+      <div class="timeline">
+        <article class="step"><h3>Ưu tiên intent cao</h3><p>Tập trung nhóm “bảng giá”, “chi phí”, “dịch vụ”, “thủ tục”, “vận chuyển chó mèo đi Mỹ/Úc/Canada”.</p></article>
+        <article class="step"><h3>Tối ưu chuyển đổi</h3><p>Bổ sung CTA, hotline, Zalo và form tư vấn trên các bài đang có thứ hạng tốt.</p></article>
+        <article class="step"><h3>Tăng trust nội dung</h3><p>Duy trì bài giáo dục thị trường, case study, quy trình và giải đáp rào cản mua.</p></article>
+        <article class="step"><h3>Đo lường thực tế</h3><p>Theo dõi từ khóa, traffic, inbox, Zalo, form và tỉ lệ chuyển đổi thành khách hàng.</p></article>
+      </div>
+      <div style="height:22px"></div>
+      <div class="kpi-grid">
+        <div class="kpi-card"><h3>📈 KPI SEO</h3><div class="table-wrap"><table><thead><tr><th>Chỉ số</th><th>Mục tiêu tháng 7</th><th>Ghi chú</th></tr></thead><tbody><tr><td>Số bài đăng</td><td>15–20 bài viết</td><td>Trung bình 3–5 bài/tuần</td></tr>
+<tr><td>Từ khóa Top 1</td><td>Tăng từ 12 lên 15–18 từ khóa</td><td>Ưu tiên nhóm bảng giá, chi phí, dịch vụ</td></tr>
+<tr><td>Từ khóa Top 3</td><td>Tăng thêm 5–8 từ khóa</td><td>Tập trung các từ khóa đang vị trí 2–3</td></tr>
+<tr><td>Từ khóa Top 10</td><td>Duy trì trên 45 từ khóa</td><td>Không để rơi các từ khóa trang 1 hiện có</td></tr>
+<tr><td>Từ khóa Top 11–20</td><td>Kéo tối thiểu 3–5 từ khóa vào Top 10</td><td>Ưu tiên “bảng giá vận chuyển thú cưng”, “lồng bay IATA”, “test dại chó mèo đi Úc”</td></tr></tbody></table></div></div>
+        <div class="kpi-card"><h3>💬 KPI Fanpage</h3><div class="table-wrap"><table><thead><tr><th>Chỉ số</th><th>Mục tiêu tháng 7</th><th>Ghi chú</th></tr></thead><tbody><tr><td>Số bài đăng Fanpage</td><td>20–24 bài/tháng</td><td>Trung bình 5–6 bài/tuần</td></tr>
+<tr><td>Bài kiến thức/giáo dục thị trường</td><td>12–14 bài</td><td>Tăng trust, xử lý rào cản mua</td></tr>
+<tr><td>Bài dịch vụ/chuyển đổi</td><td>6–8 bài</td><td>Kêu gọi inbox/Zalo</td></tr>
+<tr><td>Bài case study/quy trình</td><td>3–4 bài</td><td>Tăng niềm tin</td></tr></tbody></table></div></div>
+        <div class="kpi-card"><h3>🎬 KPI TikTok</h3><div class="table-wrap"><table><thead><tr><th>Chỉ số</th><th>Mục tiêu tháng 7</th><th>Ghi chú</th></tr></thead><tbody><tr><td>Triển khai kênh TikTok</td><td>1</td><td>Xây dựng kênh TikTok về dịch vụ</td></tr>
+<tr><td>Số video</td><td>5–10 video</td><td>Trung bình 2 video/tuần</td></tr>
+<tr><td>Mục tiêu follower</td><td>1.000 follower</td><td>Tạo nền tảng phân phối nội dung ngắn</td></tr></tbody></table></div></div>
+      </div>
+    </section>
+
+    <section id="evidence" class="section">
+      <div class="section-title">
+        <h2>Minh chứng từ báo cáo</h2>
+        <p>Các ảnh chụp trong file báo cáo cho thấy kết quả tìm kiếm Google, AI Overview, AI Search và giao diện Fanpage tại thời điểm kiểm tra.</p>
+      </div>
+      <div class="evidence-grid">
+        
+          <article class="evidence-card">
+            <img src="assets/image1.png" alt="Ảnh kiểm tra từ khóa thương hiệu Ship24H trên Google Search." loading="lazy">
+            <div class="evidence-copy">
+              <h3>Brand Search Ship24H</h3>
+              <p>Ảnh kiểm tra từ khóa thương hiệu Ship24H trên Google Search.</p>
+            </div>
+          </article>
+        
+
+          <article class="evidence-card">
+            <img src="assets/image2.png" alt="Ảnh kiểm tra hiển thị AI Overview cho truy vấn liên quan Ship24H." loading="lazy">
+            <div class="evidence-copy">
+              <h3>AI Overview Ship24H</h3>
+              <p>Ảnh kiểm tra hiển thị AI Overview cho truy vấn liên quan Ship24H.</p>
+            </div>
+          </article>
+        
+
+          <article class="evidence-card">
+            <img src="assets/image3.png" alt="Ảnh kết quả AI Search cho CEO Trịnh Quang Hiệu gắn với Ship24H." loading="lazy">
+            <div class="evidence-copy">
+              <h3>CEO trên AI Search</h3>
+              <p>Ảnh kết quả AI Search cho CEO Trịnh Quang Hiệu gắn với Ship24H.</p>
+            </div>
+          </article>
+        
+
+          <article class="evidence-card">
+            <img src="assets/image4.png" alt="Ảnh kiểm tra truy vấn Trịnh Quang Hiệu Ship24H trên Google Search." loading="lazy">
+            <div class="evidence-copy">
+              <h3>CEO + Brand trên Google</h3>
+              <p>Ảnh kiểm tra truy vấn Trịnh Quang Hiệu Ship24H trên Google Search.</p>
+            </div>
+          </article>
+        
+
+          <article class="evidence-card">
+            <img src="assets/image5.png" alt="Ảnh kiểm tra AI Overview cho truy vấn CEO Trịnh Quang Hiệu Ship24H." loading="lazy">
+            <div class="evidence-copy">
+              <h3>CEO + Ship24H AI Overview</h3>
+              <p>Ảnh kiểm tra AI Overview cho truy vấn CEO Trịnh Quang Hiệu Ship24H.</p>
+            </div>
+          </article>
+        
+
+          <article class="evidence-card">
+            <img src="assets/image6.png" alt="Ảnh giao diện Fanpage Ship24H đã triển khai định hướng nội dung." loading="lazy">
+            <div class="evidence-copy">
+              <h3>Fanpage Ship24H</h3>
+              <p>Ảnh giao diện Fanpage Ship24H đã triển khai định hướng nội dung.</p>
+            </div>
+          </article>
+        
+      </div>
+    </section>
+
+
+  </main>
+
+  <footer class="footer">
+    Nguồn dữ liệu: Báo cáo triển khai SEO và Social thương hiệu Ship24H tháng 6 • Dự án: Ship24H • Website: ship24h.vn
+  </footer>
+
+  <script>
+    document.querySelectorAll('.tab-button').forEach(button => {
+      button.addEventListener('click', () => {
+        document.querySelectorAll('.tab-button').forEach(b => b.classList.remove('active'));
+        document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+        button.classList.add('active');
+        document.getElementById(button.dataset.tab).classList.add('active');
+      });
+    });
+  </script>
+</body>
+</html>
